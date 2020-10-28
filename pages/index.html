@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0bbaf28253.js" crossorigin="anonymous"></script>
+
     <title>Project2 Home</title>
 </head>
 <body>
@@ -11,18 +13,28 @@
             <div class="burgerContent">
                 <nav>
                     <ul class="mainNav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li>Sophie</li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a class="mainNav__active" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="heading__nav">
+                            Sophie                           
+                        </li>
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div class="heroContent">
                 <div class="title">
                     <img src="../assets/circle-text.png" alt="words: It's all about">
-                    <h1>Sophie</h1>
+                    <h1 class="heading">Sophie</h1>
                 </div>
                 <img src="../assets/home-image-1.jpg" alt="Playful, tongue out, smiling woman holding open faced oranges over her eyes">
             </div>
@@ -36,69 +48,82 @@
                 <article class="who">
                     <h2>Who is Sophie?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eveniet asperiores saepe inventore sapiente, dolores cupiditate nemo adipisci vero labore quae aliquid doloribus fugiat, atque rerum rem itaque illum. Maiores minus iusto quae quaerat? Soluta dolores dignissimos ducimus aliquam facere consequuntur numquam, saepe sit odit beatae laudantium quas natus temporibus!</p>
-                    <a class="more more__find" href="#">Find out more</a>
+                    <a class="blueButton blueButton__find" href="#">Find out more</a>
                 </article>
 
-                <article class="faves">
-                    <img src="../assets/home-image-2.jpg" alt="A scruffy dog with its head out the back window of a car">
-                    <h3>Sophie's Favourite Things</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum, distinctio facilis, repellat rerum, consequuntur ea cumque qui aut et neque. Vel blanditiis dolorum voluptatem nemo autem voluptatum iste voluptas.</p>
-                    <a class="more more__read" href="#">Read More</a>
+                <article class="faves flexbox">
+                    <div class="image1">
+                        <img src="../assets/home-image-2.jpg" alt="A scruffy dog with its head out the back window of a car">
+                    </div>
+                    <div class="favesText">
+                        <h3>Sophie's Favourite Things</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum, distinctio facilis, repellat rerum, consequuntur ea cumque qui aut et neque. Vel blanditiis dolorum voluptatem nemo autem voluptatum iste voluptas.</p>
+                        <a class="blueButton blueButton__more" href="#">Read More</a>
+                    </div>
                 </article>
 
-                <article class="travel">
-                    <h3>Where She's Travelled</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, porro fugit? Soluta vel culpa fuga quis. Autem amet iure non velit expedita quod quidem, exercitationem ipsam est. Voluptatibus, deleniti quidem.</p>
-                    <a class="more more__read" href="#">Read More</a>
-                    <img src="../assets/home-image-3.jpg" alt="A messy but pretty row of beach chairs covered by large umbrellas on sand">
+                <article class="travel flexbox">
+                    <div class="travelText">
+                        <h3>Where She's Travelled</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, porro fugit? Soluta vel culpa fuga quis. Autem amet iure non velit expedita quod quidem, exercitationem ipsam est. Voluptatibus, deleniti quidem.</p>
+                        <a class="blueButton blueButton__more" href="#">Read More</a>
+                    </div>
+                    <div class="image2">
+                        <img src="../assets/home-image-3.jpg" alt="A messy but pretty row of beach chairs covered by large umbrellas on sand">
+                    </div>
                 </article>
             </div>
         </section>
 
         <section class="middleNav">
-            <ul>
-                <li>
-                    <a href="#photos">
-                    <div class="icon"></div>
-                    <h3>Photos</h3>
-                    </a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
-                </li>
-                <li>
-                    <a href="#about">
-                    <div class="icon"></div>
-                    <h3>About</h3>
-                    </a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
-                </li>
-                <li>
-                    <a href="#blog">
-                    <div class="icon"></div>
-                    <h3>Blog</h3>
-                    </a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
-                </li>
-                <li>
-                    <a href="#contact">
-                    <div class="icon"></div>
-                    <h3>Get In Touch</h3>
-                    </a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
-                </li>
-            </ul>
+            <div class="wrapper">
+                <ul class="flexbox">
+                    <li>
+                        <a href="#photos">
+                        <div class="icon"><i class="fas fa-image"></i></div>
+                        <h3>Photos</h3>
+                        </a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
+                    </li>
+                    <li>
+                        <a href="#about">
+                        <div class="icon"><i class="fas fa-user"></i></div>
+                        <h3>About</h3>
+                        </a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                        <div class="icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Blog</h3>
+                        </a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
+                    </li>
+                    <li>
+                        <a href="./contact.html">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <h3>Get In Touch</h3>
+                        </a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis cum excepturi laborum eveniet necessitatibus mollitia repellat saepe, vero eligendi, illum ipsa quis quibusdam quod similique.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
+        
         <img src="../assets/home-image-4.jpg" alt="Theatre chairs in a folded position">
 
         <section class="journey">
-            <img src="../assets/home-image-5.jpg" alt="A Woman looking onward in the sun with rendy ripped jeans">
-            <h2>Sophie's Journey</h2>
-            <p>lorem45</p>
-            <a class="more more__find" href="#">FInd Out More</a>
+            <div class="wrapper">
+                <img src="../assets/home-image-5.jpg" alt="A Woman looking onward in the sun with rendy ripped jeans">
+                <h2>Sophie's Journey</h2>
+                <p>lorem45</p>
+                <a class="blueButton blueButton__find" href="#">FInd Out More</a>
+            </div>
         </section>
 
         <section id="photos">
-            <div class="photos">
+            <div class="photos wrapper flexbox">
                 <img src="../assets/home-image-6.jpg" alt="A pretty bike with a basket on the front">
                 <img src="../assets/home-image-7.jpg" alt="Looking up at a brick building with an arch below and a blue sky above">
                 <img src="../assets/home-image-8.jpg" alt="Part of  beach umbrella that reads, 'banana beach'">
@@ -106,7 +131,7 @@
         </section>
     </main>
 
-    <footer>Made by Harry Guloien @ Juno College</footer>
+    <footer>Created by Harry Guloien <a href="https://junocollege.com/">@Juno College</a></footer>
     
 </body>
 </html>
