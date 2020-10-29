@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0bbaf28253.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Project2 Home</title>
 </head>
 <body>
-    <header id="home">
+    <header class="home" id="home">
         <div class="wrapper burger">
             <div class="burgerContent">
                 <nav>
-                    <ul class="mainNav">
-                        <li>
-                            <a class="mainNav__active" href="#home">Home</a>
+                    <ul class="navBar">
+                        <li class="navBar__active">
+                            <a href="#home">Home</a>
                         </li>
                         <li>
                             <a href="#about">About</a>
                         </li>
-                        <li class="heading__nav">
-                            Sophie                           
+                        <li class="navBar--head">
+                            Sophie 
                         </li>
                         <li>
                             <a href="./blog.html">Blog</a>
@@ -31,12 +34,16 @@
                     </ul>
                 </nav>
             </div>
-            <div class="heroContent">
-                <div class="title">
-                    <img src="../assets/circle-text.png" alt="words: It's all about">
-                    <h1 class="heading">Sophie</h1>
+            <div class="heroContent flexbox">
+                <div class="container flexbox">
+                    <div class="title">
+                        <img src="../assets/circle-text.png" alt="words: It's all about">
+                        <h1 class="heading">Sophie</h1>
+                    </div>
+                    <div class="imageBox">
+                        <img src="../assets/home-image-1.jpg" alt="Playful, tongue out, smiling woman holding open faced oranges over her eyes">
+                    </div>
                 </div>
-                <img src="../assets/home-image-1.jpg" alt="Playful, tongue out, smiling woman holding open faced oranges over her eyes">
             </div>
         </div>
     </header>
@@ -44,31 +51,35 @@
     <main>
         <section id="about">
             <div class="wrapper">
-
-                <article class="who">
-                    <h2>Who is Sophie?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eveniet asperiores saepe inventore sapiente, dolores cupiditate nemo adipisci vero labore quae aliquid doloribus fugiat, atque rerum rem itaque illum. Maiores minus iusto quae quaerat? Soluta dolores dignissimos ducimus aliquam facere consequuntur numquam, saepe sit odit beatae laudantium quas natus temporibus!</p>
-                    <a class="blueButton blueButton__find" href="#">Find out more</a>
+                
+                <article class="who flexbox">
+                    <div class="container">
+                        <h2>Who is Sophie?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eveniet asperiores saepe inventore sapiente, dolores cupiditate nemo adipisci vero labore quae aliquid doloribus fugiat, atque rerum rem itaque illum. Maiores minus iusto quae quaerat? Soluta dolores dignissimos.</p>
+                        <a class="blueButton blueButton__find" href="#">Find out more</a>
+                    </div>
                 </article>
 
-                <article class="faves flexbox">
-                    <div class="image1">
+                <article class="faves">
+                    <div class="container flexbox">
+                    <div class="image1 container">
                         <img src="../assets/home-image-2.jpg" alt="A scruffy dog with its head out the back window of a car">
                     </div>
-                    <div class="favesText">
+                    <div class="favesText container">
                         <h3>Sophie's Favourite Things</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum, distinctio facilis, repellat rerum, consequuntur ea cumque qui aut et neque. Vel blanditiis dolorum voluptatem nemo autem voluptatum iste voluptas.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum, distinctio facilis, repellat rerum, consequuntur ea cumque qui aut et neque. Vel blanditiis dolorum voluptatem.</p>
                         <a class="blueButton blueButton__more" href="#">Read More</a>
+                    </div>
                     </div>
                 </article>
 
                 <article class="travel flexbox">
-                    <div class="travelText">
+                    <div class="travelText container">
                         <h3>Where She's Travelled</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, porro fugit? Soluta vel culpa fuga quis. Autem amet iure non velit expedita quod quidem, exercitationem ipsam est. Voluptatibus, deleniti quidem.</p>
                         <a class="blueButton blueButton__more" href="#">Read More</a>
                     </div>
-                    <div class="image2">
+                    <div class="image2 container">
                         <img src="../assets/home-image-3.jpg" alt="A messy but pretty row of beach chairs covered by large umbrellas on sand">
                     </div>
                 </article>
@@ -131,7 +142,7 @@
         </section>
     </main>
 
-    <footer>Created by Harry Guloien <a href="https://junocollege.com/">@Juno College</a></footer>
+    <footer><p>Created by Harry Guloien <a href="https://junocollege.com/">@Juno College</a></p></footer>
     
 </body>
 </html>

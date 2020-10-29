@@ -1,0 +1,48 @@
+// HOME PAGE MAIN//
+
+.who {
+    background-color: $white;
+    padding: 80px 0 100px 0;
+    justify-content: center;
+}
+
+.who .container {
+    padding-right: 100px;
+}
+
+
+
+.faves,
+.travel {
+    padding-top: 50px;
+    height: 60vh;
+}
+
+.faves .container {
+}
+
+.image1,
+.favesText,
+.travelText,
+.image2 {
+    width: calc(50% - 122px)
+}
+.image1,
+.image2 {
+    position: relative;
+    height: 100%;
+}
+
+.image1 img {
+    position: absolute;
+    top: -82px;
+    z-index: 3;
+}
+
+.favesText > p {
+    padding-bottom: 5px;
+}
+
+
+
+

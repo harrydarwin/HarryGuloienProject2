@@ -1,0 +1,44 @@
+body {
+    @include fontDef(2rem, 3.2rem, 0, $roboto, regular);
+}
+
+// NAV BARS //
+.navBar {
+    @include fontDef(2rem, 2.9rem, 1px);
+    text-transform: uppercase;
+    &__active {
+        color: $white;
+    }
+    &--head {
+       @include fontDef(3.8rem, 3.2rem, 1px, $lora); 
+    }
+}
+
+.blueButton {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $black
+}
+
+
+
+// H1s // 
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+
+.home h1 {
+    @include fontDef(14rem, 12rem, 1px, $lora,);
+}
+
+h2 {
+    @include fontDef(4.2rem, 5.04rem);
+}
+
+h3 {
+    @include fontDef(3.2rem, 3.84rem);
+}

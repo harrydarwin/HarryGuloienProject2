@@ -1,0 +1,91 @@
+// COLOR PALETTE
+$black: #2c2c2c;
+$white: #f0efed;
+$darkBlue: #285e64;
+$yellow: #f6a823;
+$grey: #4f4f4f;
+$lightBlue: #05afc1;
+$red: #a82706;
+
+// FONTS
+$lora: 'Lora', serif;
+$roboto: 'Roboto', sans-serif;
+
+// MIXINS
+@mixin fontDef($size, $height, $space:1px, $font:$roboto, $weight:bold, $color:$black ) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $height;
+    letter-spacing: $space;
+};
+
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit; text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+footer {
+    background-color: $grey;
+    p {
+        color: $white;
+        a:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.blueButton {
+    background-color: lighten($lightBlue,6%);
+    height: 30px;
+    width: 80px;
+    padding: 10px 15px;
+}
