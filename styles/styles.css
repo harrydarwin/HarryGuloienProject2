@@ -419,9 +419,8 @@ header.home {
 }
 
 .imageBox {
-  margin-right: 24px;
+  margin-right: 16px;
   margin-top: 40px;
-  padding-right: 16px;
 }
 
 .imageBox img {
@@ -474,34 +473,56 @@ nav ul li a {
 }
 
 .who .container {
-  padding-right: 100px;
+  padding-right: 10%;
+  width: 82%;
 }
 
 .faves,
 .travel {
-  padding-top: 50px;
-  height: 60vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 65vh;
+}
+
+.faves .container,
+.travel .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .image1,
-.favesText,
-.travelText,
 .image2 {
-  width: calc(50% - 122px);
-}
-
-.image1,
-.image2 {
+  width: calc(55% - 53.5px);
+  max-height: 295px;
   position: relative;
   height: 100%;
 }
 
-.image1 img {
-  position: absolute;
-  top: -82px;
-  z-index: 3;
+.favesText,
+.travelText {
+  width: calc(50% - 60px);
 }
 
-.favesText > p {
-  padding-bottom: 5px;
+.image1 img {
+  position: absolute;
+  top: -11%;
+  -webkit-box-shadow: 14px 14px 0px 0px #a82706, -95px 14px 0px 0px #a82706;
+          box-shadow: 14px 14px 0px 0px #a82706, -95px 14px 0px 0px #a82706;
+}
+
+.image2 img {
+  -webkit-box-shadow: 14px 14px 0px 0px #f6a823, 95px 14px 0px 0px #f6a823;
+          box-shadow: 14px 14px 0px 0px #f6a823, 95px 14px 0px 0px #f6a823;
+}
+
+.favesText {
+  margin-top: 71px;
+  padding-right: 10px;
+}
+
+.travelText {
+  text-align: right;
+  margin-right: 10px;
 }
