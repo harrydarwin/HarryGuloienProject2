@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit; text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+footer {
+    background-color: $grey;
+    p {
+        color: $white;
+        a:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.blueButton {
+    background-color: lighten($lightBlue,6%);
+    height: 30px;
+    width: 80px;
+    padding: 10px 15px;
+    &__find {
+        @extend .blueButton;
+        width: 180px;
+        height: 50px;
+    
+
+    }
+}

@@ -15,7 +15,7 @@
 .faves,
 .travel {
     justify-content: center;
-    height: 65vh;
+    height: 60vh;
 }
 
 .faves .container,
@@ -44,6 +44,8 @@
 }
 
 .image2 img {
+    position: absolute;
+    top: 9%;
     box-shadow: 14px 14px 0px 0px $yellow, 95px 14px 0px 0px $yellow;
 }
 
@@ -55,8 +57,51 @@
 .travelText {
     text-align: right;
     margin-right: 10px;
+    margin-top: 25px;
+}
+
+// MID PAGE NAV SECTION //
+
+
+.middleNav {
+    background: $white;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    & li:nth-of-type(even) {
+        padding-left: 10px;
+    }
+    & li {
+        margin-bottom: 30px;
+    }
 }
 
 
+.gridTime {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 100px 0 50px 0;
+    & li > p {
+        padding-left: 55px;
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    & +h3 {
+        margin-left: 15px;
+    }   
+}
 
 
+// JOURNEY SECTION//
+.journey {
+    
+}
