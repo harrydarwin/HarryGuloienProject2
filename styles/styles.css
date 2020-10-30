@@ -377,6 +377,15 @@ h4 {
   text-transform: uppercase;
 }
 
+h1 {
+  font-family: "Lora", serif;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  line-height: 9.2rem;
+  letter-spacing: 0;
+}
+
 .home h1 {
   font-family: "Lora", serif;
   font-size: 14rem;
@@ -454,8 +463,14 @@ header.home {
   top: 180px;
 }
 
+header.blog {
+  background: url(../../assets/blog-image-1.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+
 nav ul {
-  padding-top: 10px;
+  padding: 10px 0;
 }
 
 nav ul li {
@@ -484,6 +499,10 @@ nav ul li a {
 
 .navBar li a:hover {
   color: #f0efed;
+}
+
+.contact nav {
+  background: #f6a823;
 }
 
 .who {
@@ -646,4 +665,26 @@ nav ul li a {
       grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 60px 0;
+}
+
+.blogGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contactPage {
+  position: relative;
+}
+
+.heading__contact {
+  position: absolute;
+  top: -53px;
+}
+
+.contactMain {
+  background-color: #f0efed;
 }

@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <header id="#contact">
+    <header class="contact" id="#contact">
         <div class="wrapper burger">
             <div class="burgerContent">
                 <nav>
                     <ul class="navBar">
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="./index.html">Home</a>
                         </li>
                         <li>
                             <a href="#about">About</a>
                         </li>
-                        <li class="navBar--Head">
+                        <li class="navBar--head">
                             Sophie
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a href="./blog.html">Blog</a>
                         </li>
                         <li class="navBar__active" >
                             <a href="#contact">Contact</a>
@@ -36,51 +36,53 @@
                     </ul>
                 </nav>
             </div>
-            <h1 class="heading heading__contact">Get In Touch</h1>
+            <img src="../assets/contact-image-1.jpg" alt="Aesthetic photo of Sophies face upside down with orange slices scattered about">
         </div>
     </header>
 
-    <main>
-        <div class="wrapper flexbox">
-
-            <div class="contactInfo">
-                <ul>
-                    <li>
-                        <a href="#" class="socials"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="socials"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="socials"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="socials"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                </ul>
-                <p class="email">info@email.com</p>
-                <p>123-456-7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
+    <main class="contactMain">
+        <div class="wrapper">
+            <div class="contactPage container">
+                <h1 class="heading__contact">Get In Touch</h1>
+                <div class="contactInfo">
+                    <ul>
+                        <li>
+                            <a href="#" class="socials"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="socials"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="socials"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="socials"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                    <p class="email">info@email.com</p>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+                
+                <form class="form form__contact" action="#">
+                    <fieldset>
+                        <legend>Send us a message</legend>
+                
+                        <label for="name" class="srOnly">Enter your name</label>
+                        <input name="name" id="name" type="text" placeholder="Name" required>
+                
+                        <label for="email" class="srOnly">Enter your email</label>
+                        <input name="email" id="email" type="email" placeholder="Email" required>
+                
+                        <label for="comment" class="srOnly">Enter your comment</label>
+                        <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
+                
+                        <button class="blueButton blueButton__form" type="submit">Post Comment</button>
+                    </fieldset>
+                </form>
             </div>
-            
-            <form class="form form__contact" action="#">
-                <fieldset>
-                    <legend>Send us a message</legend>
-            
-                    <label for="name" class="srOnly">Enter your name</label>
-                    <input name="name" id="name" type="text" placeholder="Name" required>
-            
-                    <label for="email" class="srOnly">Enter your email</label>
-                    <input name="email" id="email" type="email" placeholder="Email" required>
-            
-                    <label for="comment" class="srOnly">Enter your comment</label>
-                    <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
-            
-                    <button class="blueButton blueButton__form" type="submit">Post Comment</button>
-                </fieldset>
-            </form>
         </div>
     </main>
 

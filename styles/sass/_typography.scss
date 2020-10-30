@@ -30,6 +30,9 @@ h4 {
     text-transform: uppercase;
 }
 
+h1 {
+    @include fontDef(8rem, 9.2rem, 0, $lora);
+}
 
 .home h1 {
     @include fontDef(14rem, 12rem, 1px, $lora,);

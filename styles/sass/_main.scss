@@ -136,3 +136,26 @@
 
     }
 }
+
+
+
+// BLOG PAGE MAIN//
+    .blogGrid {
+         display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+// CONTACT PAGE MAIN//
+.contactPage {
+    position: relative;
+}
+.heading__contact {
+    position: absolute;
+    top: -53px;
+}
+
+.contactMain {
+    background-color: $white;
+}
