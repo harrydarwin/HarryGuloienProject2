@@ -214,6 +214,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -269,6 +270,10 @@ img {
   height: auto;
   display: block;
   margin: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 footer {
@@ -413,6 +418,14 @@ h3 {
   letter-spacing: 1px;
 }
 
+.contactInfo li a {
+  color: #f6a823;
+}
+
+.email {
+  font-weight: bold;
+}
+
 header.home {
   height: 95vh;
   background-color: #f6a823;
@@ -463,10 +476,31 @@ header.home {
   top: 180px;
 }
 
-header.blog {
-  background: url(../../assets/blog-image-1.jpg);
+.splash, .splash--blog, .splash--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-size: cover;
-  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+
+.splash--blog {
+  background-image: url(../assets/blog-image-1.jpg);
+}
+
+.splash--contact {
+  background-image: url(../assets/contact-image-1.jpg);
+}
+
+.splash .container, .splash--blog .container, .splash--contact .container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 nav ul {
@@ -482,6 +516,7 @@ nav ul li a {
 }
 
 .navBar {
+  background: #f6a823;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,10 +534,6 @@ nav ul li a {
 
 .navBar li a:hover {
   color: #f0efed;
-}
-
-.contact nav {
-  background: #f6a823;
 }
 
 .who {
@@ -667,24 +698,62 @@ nav ul li a {
   padding: 60px 0;
 }
 
-.blogGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  -ms-grid-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.contactPage {
-  position: relative;
-}
-
-.heading__contact {
-  position: absolute;
-  top: -53px;
+.blogPosts {
+  padding-top: 80px;
 }
 
 .contactMain {
   background-color: #f0efed;
+  padding: 80px 0;
+}
+
+.contactMain .wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactInfo {
+  height: auto;
+  width: calc(35%);
+  background: white;
+  padding: 30px 30px 30px 30px;
+}
+
+.form {
+  width: calc(65% - 30px);
+}
+
+.form--users {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form--info {
+  height: 50px;
+  width: calc(50% - 10px);
+}
+
+.contactInfo li i {
+  padding: 2px;
+  margin-right: 21px;
+}
+
+.contactInfo li {
+  display: inline-block;
+}
+
+.contactPage {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactPage p {
+  margin: 0;
+}
+
+.email {
+  padding: 10px 0;
 }

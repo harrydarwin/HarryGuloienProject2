@@ -45,3 +45,12 @@ h2 {
 h3 {
     @include fontDef(3.2rem, 3.84rem);
 }
+
+.contactInfo li a {
+    color: $yellow;
+}
+
+.email {
+    font-weight: bold;
+}
+

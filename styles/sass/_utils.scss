@@ -12,6 +12,7 @@ $lora: 'Lora', serif;
 $roboto: 'Roboto', sans-serif;
 
 // MIXINS
+// FONT FUNCTION
 @mixin fontDef($size, $height, $space:1px, $font:$roboto, $weight:bold, $color:$black ) {
     font-family: $font;
     font-size: $size;
@@ -20,3 +21,12 @@ $roboto: 'Roboto', sans-serif;
     line-height: $height;
     letter-spacing: $space;
 };
+
+// BACKGROUND FUNCTION
+@mixin backgroundTime($url, $size:cover, $position:center, $repeat:no-repeat, $height:55vh) {
+    background: url($url);
+    background-size: $cover;
+    background-position: $center;
+    background-repeat: $no-repeat;
+    height: $height;
+}

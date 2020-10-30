@@ -8,18 +8,19 @@ nav ul {
 }
 
 .navBar {
+    background: $yellow;
     display: flex;
     justify-content: center;
     align-items: center ;
     &--head {
     margin: 0 40px 0 40px;
-}
+    }
 }
 
 .navBar li a:hover {
     color: $white;
 }
 
-.contact nav {
-    background: $yellow;
-}
+// .navBar {
+//     background: $yellow;
+// }

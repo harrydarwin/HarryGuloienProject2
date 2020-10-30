@@ -140,22 +140,56 @@
 
 
 // BLOG PAGE MAIN//
-    .blogGrid {
-         display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    .blogPosts {
+        padding-top: 80px;
     }
 
 
 // CONTACT PAGE MAIN//
-.contactPage {
-    position: relative;
-}
-.heading__contact {
-    position: absolute;
-    top: -53px;
-}
 
 .contactMain {
     background-color: $white;
+    padding: 80px 0;
+}
+
+.contactMain .wrapper {
+    justify-content: center;
+}
+.contactInfo {
+    height: auto;
+    width: calc(35%);
+    background: white;
+    padding: 30px 30px 30px 30px;
+}
+
+.form {
+    width: calc(65% - 30px);
+    &--users {
+        justify-content: space-between;
+    }
+    &--info {
+        height: 50px;
+        width: calc(50% - 10px);
+    }
+}
+
+.contactInfo li i {
+    padding: 2px;
+    margin-right: 21px;
+}
+
+.contactInfo li {
+    display: inline-block;
+}
+
+.contactPage {
+    justify-content: space-between;
+}
+
+.contactPage p{
+    margin: 0;
+}
+
+.email {
+    padding: 10px 0;
 }

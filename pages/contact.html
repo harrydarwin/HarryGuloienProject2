@@ -13,37 +13,37 @@
 </head>
 
 <body>
-    <header class="contact" id="#contact">
-        <div class="wrapper burger">
-            <div class="burgerContent">
-                <nav>
-                    <ul class="navBar">
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="navBar--head">
-                            Sophie
-                        </li>
-                        <li>
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <li class="navBar__active" >
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <img src="../assets/contact-image-1.jpg" alt="Aesthetic photo of Sophies face upside down with orange slices scattered about">
+    <div class="burgerContent">
+        <nav>
+            <ul class="navBar">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li class="navBar--head">
+                    Sophie
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li class="navBar__active">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="splash splash--contact wrapper" id="#contact">
+        <div class="container">
+            <h1 class="topper--text">Get In Touch</h1>
         </div>
     </header>
 
     <main class="contactMain">
-        <div class="wrapper">
-            <div class="contactPage container">
-                <h1 class="heading__contact">Get In Touch</h1>
+        <div class="wrapper flexbox">
+            <div class="contactPage container flexbox">
                 <div class="contactInfo">
                     <ul>
                         <li>
@@ -56,7 +56,7 @@
                             <a href="#" class="socials"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="socials"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="socials"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                     <p class="email">info@email.com</p>
@@ -68,18 +68,20 @@
                 
                 <form class="form form__contact" action="#">
                     <fieldset>
-                        <legend>Send us a message</legend>
-                
-                        <label for="name" class="srOnly">Enter your name</label>
-                        <input name="name" id="name" type="text" placeholder="Name" required>
-                
-                        <label for="email" class="srOnly">Enter your email</label>
-                        <input name="email" id="email" type="email" placeholder="Email" required>
-                
-                        <label for="comment" class="srOnly">Enter your comment</label>
-                        <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
-                
-                        <button class="blueButton blueButton__form" type="submit">Post Comment</button>
+                        <legend class="srOnly">Send us a message</legend>
+                        <div class="flexColumn">
+                            <div class="form--users flexbox">
+                                <label for="name" class="srOnly">Enter your name</label>
+                                <input class="form--info" name="name" id="name" type="text" placeholder="Name" required>
+                        
+                                <label for="email" class="srOnly">Enter your email</label>
+                                <input class="form--info" name="email" id="email" type="email" placeholder="Email" required>
+                            </div>
+                            <label for="comment" class="srOnly">Enter your comment</label>
+                            <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
+                    
+                            <button class="blueButton blueButton__form" type="submit">Post Comment</button>
+                        </div>
                     </fieldset>
                 </form>
             </div>

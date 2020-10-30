@@ -46,8 +46,24 @@ header.home {
 }
 
 // BLOG HEADER //
-header.blog {
-    background: url(../../assets/blog-image-1.jpg);
+.splash {
+    display: flex;
+    justify-content: center;
     background-size: cover;
-    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    &--blog {
+        @extend .splash;
+        background-image: url(../assets/blog-image-1.jpg)
+    }
+    &--contact {
+        @extend .splash;
+        background-image: url(../assets/contact-image-1.jpg);
+    }
 }
+
+.splash .container {
+    justify-content: flex-start;
+}
+
