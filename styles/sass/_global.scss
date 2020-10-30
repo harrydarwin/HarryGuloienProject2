@@ -7,7 +7,8 @@ html {
 h1,
 h2,
 h3,
-h4 {
+h4,
+footer p {
     margin: 0;
     padding: 0;
 }
@@ -34,8 +35,10 @@ img{
 
 footer {
     background-color: $grey;
+    margin: 0;
     p {
         color: $white;
+        text-align: center;
         a:hover {
             color: $yellow;
         }
@@ -62,15 +65,20 @@ footer {
 }
 
 .blueButton {
-    background-color: lighten($lightBlue,6%);
+    // Blue on the design guide was TOO DARK! 
+    background-color: lighten($lightBlue, 6%);
     height: 30px;
     width: 80px;
     padding: 10px 15px;
+    transition: .2s,;
     &__find {
         @extend .blueButton;
         width: 180px;
         height: 50px;
-    
-
     }
+}
+
+.blueButton:hover,
+.blueButton:focus {
+    box-shadow: 3px 3px 0px 2px $yellow;
 }
