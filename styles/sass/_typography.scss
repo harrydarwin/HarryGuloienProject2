@@ -14,7 +14,8 @@ body {
     }
 }
 
-.blueButton {
+.blueButton,
+button[type=submit] {
     font-weight: bold;
     text-transform: uppercase;
     color: $black
@@ -52,5 +53,12 @@ h3 {
 
 .email {
     font-weight: bold;
+}
+
+input,
+textarea {
+    font-size: 2rem;
+    font-family: $roboto;
+    font-style: italic;
 }
 

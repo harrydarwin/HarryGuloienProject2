@@ -61,9 +61,15 @@ header.home {
         @extend .splash;
         background-image: url(../assets/contact-image-1.jpg);
     }
+    &--heading {
+        position: absolute;
+        bottom: -40px;
+    }
 }
 
 .splash .container {
     justify-content: flex-start;
+    position: relative;
 }
+
 

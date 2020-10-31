@@ -32,9 +32,19 @@ img{
     display: block;
     margin: 0;
 }
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+input {
+    border: none;
+}
 
 textarea {
     resize: none;
+    border: none;
 }
 
 footer {
@@ -74,7 +84,7 @@ footer {
     height: 30px;
     width: 80px;
     padding: 10px 15px;
-    transition: .2s,;
+    transition: .2s;
     &__find {
         @extend .blueButton;
         width: 180px;

@@ -30,3 +30,31 @@ $roboto: 'Roboto', sans-serif;
     background-repeat: $no-repeat;
     height: $height;
 }
+
+@keyframes slickBorder{
+    0% {
+        border-left: $yellow;
+    }
+
+    25% {
+        border-left: $yellow;
+        border-top: $yellow;
+    }
+
+    50% {
+        border-top: $yellow;
+        border-right: $yellow;
+        
+    }
+
+    75% {
+        border-right: $yellow;
+        border-bottom: $yellow;
+        
+    }
+
+    100% {
+        border-left: $yellow;
+        border-bottom: $yellow;
+    }
+}
