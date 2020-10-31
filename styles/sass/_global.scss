@@ -96,3 +96,13 @@ footer {
 .blueButton:focus {
     box-shadow: 3px 3px 0px 2px $yellow;
 }
+
+.blueLink {
+    color: $darkBlue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blueLink:hover {
+    color: $yellow;
+}

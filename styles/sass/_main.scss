@@ -2,7 +2,7 @@
 
 .who {
     background-color: $white;
-    padding: 80px 0 100px 0;
+    padding: 80px 0 100px;
     justify-content: center;
 }
 
@@ -85,7 +85,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 100px 0 50px 0;
+    padding: 100px 0 50px;
     & li > p {
         padding-left: 55px;
     }
@@ -110,7 +110,7 @@
     background: $white;
     display: flex;
     justify-content: center;
-    padding: 70px 0 70px 0;
+    padding: 70px 0 70px;
     &__grid {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -141,29 +141,69 @@
 
 // BLOG PAGE MAIN//
     .blogPosts {
-        padding-top: 80px;
+        padding: 90px 0 30px;
+        background-color: $white;
+        justify-content: center;
+        &--grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+        &--post {
+            background: white;
+            padding: 30px;
+        }
+        &--space {
+            margin-bottom: 15px;
+        }
     }
+
+    .blogPosts article img {
+        width: auto;
+        margin-right: 15px;
+    }
+
+    .blogPosts article:nth-of-type(odd) {
+        border-bottom: 5px solid $yellow;
+        margin-bottom: 25px;
+    }
+
+    .guest + p,
+    aside p:nth-of-type(1) {
+        margin: 0;
+    }
+    aside h4 {
+        margin-bottom: 10px;
+    }
+
+    .list li::before{
+        content: "\2022";
+        color: $yellow;
+        margin: 0 10px 0 5px;
+    }
+
+
 
 
 // CONTACT PAGE MAIN//
 
 .contactMain {
     background-color: $white;
-    padding: 90px 0 30px 0;
+    padding: 90px 0 30px;
     height: 100vh;
 }
 
 .contactMain .wrapper {
     justify-content: center;
-    // height: 100%;
 }
+
 .contactInfo {
     height: auto;
     width: calc(35%);
     max-height: 272px;
     overflow: none;
     background: white;
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
 }
 
 .form {
@@ -176,7 +216,12 @@
         width: calc(50% - 5px);
         padding-left: 20px;
     }
+    &--blog {
+        width: 100%;
+    }
 }
+
+
 
 .contactInfo li i {
     padding: 2px;

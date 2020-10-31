@@ -33,35 +33,24 @@
             </ul>
         </nav>
     </div>
-    <header class="splash splash--blog wrapper" id="blog">
+    <header class="splash splash--blog wrapper flexbox" id="blog">
         <div class="container">
-            <h1>Blog</h1>
+            <h1 class="splash--heading">Blog</h1>
         </div>
     </header>
 
-    <main class="blogPosts">
+    <main class="blogPosts flexbox">
 
-        <div class="wrapper flexColumn">
-            <div class="container blogGrid">
-                <aside>
+        <div class="wrapper blogPosts--grid container">
+            <div class="flexColumn">
+                <aside class="blogPosts--post blogPosts--space">
                     <img src="../assets/blog-image-2.jpg" alt="Playful, tongue out, smiling woman holding open faced oranges over her eyes">
                     <h4>About Sophie</h4>
-                    <p>$lorem12</p>
-                    <a class="blueLink" href="index.html#about">Find out more</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit numquam. <a class="blueLink" href="index.html#about">Find out more</a></p>
+                    
                 </aside>
 
-                <article class="blog">
-                    <h3>Why I Became A Blogger</h3>
-                    <p class="date">Monday October 8th, 2018 by <a class="blueLink" href="./contact.html">Sophie Barlow</a></p>
-                    <p>$lorem30</p>
-                    <p>$lorem40</p>
-                    <p>$lorem90</p>
-                    <p>$lorem25</p>
-                    <p>$lorem40</p>
-                    <p>$lorem90</p>
-                </article>
-
-                <aside>
+                <aside class="blogPosts--post">
                     <h4>Recent Posts</h4>
                     <ul class="list">
                         <li>Donec fasilisis tortor ut</li>
@@ -70,33 +59,56 @@
                         <li>Scelerisque nec pharetra id</li>
                     </ul>
                 </aside>
-
-                <article class="blog">
-                    <img src="../assets/blog-image-3.jpg" alt="head shot of a man with a collard shirt on" class="blogPic"><a class="blueLink date" href="#">Tuesday October 9th, 2018 by Jeremy</a>
-                    <p>$lorem35</p>
-                </article>
-
-                <article class="blog">
-                    <img src="../assets/blog-image-4.jpg" alt="Young woman sporting aviator sunglasses looking confidently to the distance" class="blogPic"><a class="blueLink date" href="#">Wednesday October 10th, 2018 by Julia</a>
-                    <p>lorem25</p>
-                </article>
             </div>
-                <form class="form form__blog" action="#">
+            <div class="flexColumn">
+                <article class="blogPosts--post blogPosts--space">
+                    <h3>Why I Became A Blogger</h3>
+                    <p class="date">Monday October 8th, 2018 by <a class="blueLink" href="./contact.html">Sophie Barlow</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, asperiores numquam necessitatibus commodi, corrupti earum odit ipsa temporibus molestias sed magnam! Esse ratione consequuntur eaque nesciunt unde labore qui harum!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quo nesciunt saepe dicta dolor dolores quam quibusdam doloribus dolorum accusantium quae nihil maxime, nemo nisi corrupti modi sequi cum incidunt! Nobis similique quisquam libero facere voluptatum et esse perferendis pariatur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque non laudantium delectus aliquid nisi doloremque atque nemo consequatur repellat deleniti maxime sunt, quo, obcaecati assumenda dolorem voluptatum fugiat voluptates sed ducimus placeat veniam laboriosam dolorum officiis! Veniam suscipit eos facilis laborum impedit rem, vero, mollitia hic deleniti officiis quaerat aliquam, reiciendis earum! Eligendi, expedita fugit. Laudantium beatae cupiditate ut ipsum corporis similique possimus provident ipsa numquam dolores qui, recusandae, ab natus itaque, deserunt doloremque harum adipisci excepturi pariatur vel. Perferendis animi corporis reiciendis vitae obcaecati quidem neque nemo odit?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eius fuga excepturi necessitatibus optio nostrum nam? Tempore magnam deserunt a alias dicta quam dolore atque!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, vitae rem laboriosam facilis alias ut error. Cumque distinctio aperiam laudantium ipsam dolorum quam quas saepe doloribus hic repudiandae consequuntur ullam perspiciatis eligendi aut repellendus culpa iste dolor asperiores laborum quisquam eum, consequatur deleniti suscipit. Reprehenderit maiores sunt alias autem quam amet enim assumenda quibusdam nihil numquam! Aliquid repellat magnam saepe hic itaque similique blanditiis consectetur ad quam, dignissimos quis voluptatum, maiores amet eum laborum debitis deleniti. Pariatur modi iure mollitia aperiam nesciunt ipsa veritatis similique molestiae eligendi, voluptas veniam accusantium?</p>
+                </article>
+
+                <article class="blogPosts--post flexbox blogPosts--space">
+                    <div>
+                        <img src="../assets/blog-image-3.jpg" alt="head shot of a man with a collard shirt on" class="blogPic">
+                    </div>
+                    <div>
+                        <a class="blueLink guest" href="#">Tuesday October 9th, 2018 by Jeremy</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora sit beatae incidunt quae deserunt eius ratione ducimus reprehenderit reiciendis hic deleniti nisi quod corporis!</p>
+                    </div>
+                </article>
+
+                <article class="blogPosts--post flexbox blogPosts--space">
+                    <div>
+                        <img src="../assets/blog-image-4.jpg" alt="Young woman sporting aviator sunglasses looking confidently to the distance" class="blogPic">
+                    </div>
+                    <div>
+                        <a class="blueLink guest" href="#">Wednesday October 10th, 2018 by Julia</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam tempore nostrum, similique quos nisi, totam eos sunt iusto vel fugiat?</p>
+                    </div>
+                </article>
+                <form class="form form--blog" action="#">
                     <fieldset>
-                        <legend>Post a comment</legend>
-
-                            <label for="name" class="srOnly">Enter your name</label>
-                            <input name="name" id="name" type="text" placeholder="Name" required>
-
-                            <label for="email" class="srOnly">Enter your email</label>
-                            <input name="email" id="email" type="email" placeholder="Email" required>
-
+                        <legend class="srOnly">Send us a message</legend>
+                        <div class="flexColumn">
+                            <div class="form--users flexbox">
+                                <label for="name" class="srOnly">Enter your name</label>
+                                <input class="form--info" name="name" id="name" type="text" placeholder="Name" required>
+                
+                                <label for="email" class="srOnly">Enter your email</label>
+                                <input class="form--info" name="email" id="email" type="email" placeholder="Email address" required>
+                            </div>
                             <label for="comment" class="srOnly">Enter your comment</label>
-                            <textarea name="comment" id="comment" placeholder="Comment" required></textarea>
-
-                            <button class="blueButton blueButton__form" type="submit">Post Comment</button>
+                            <textarea name="comment" id="comment" placeholder="Message" required></textarea>
+                
+                            <button type="submit">Submit</button>
+                        </div>
                     </fieldset>
                 </form>
+            </div>
         </div>
     </main>
 
