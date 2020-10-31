@@ -23,9 +23,17 @@ header.home {
 }
 
 .title img {
+    position: absolute;
     height: 120px;
     width: 195px;
-    margin-top: 22%;
+    left: 5px;
+    top: 110px
+}
+
+.home h1 {
+    position: absolute;
+    left: 60px;
+    top: 180px;
 }
 
 .imageBox {
@@ -39,11 +47,6 @@ header.home {
    box-shadow: 16px 16px 0px 0px #ffffff;
 }
 
-.home h1 {
-    position: absolute;
-    left: 60px;
-    top: 180px;
-}
 
 // BLOG HEADER //
 .splash {

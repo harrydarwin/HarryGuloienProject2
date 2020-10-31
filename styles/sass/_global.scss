@@ -80,7 +80,7 @@ footer {
 
 .blueButton {
     // Blue on the design guide was TOO DARK! 
-    background-color: lighten($lightBlue, 6%);
+    background-color: $lightBlue;
     height: 30px;
     width: 80px;
     padding: 10px 15px;
@@ -95,6 +95,7 @@ footer {
 .blueButton:hover,
 .blueButton:focus {
     box-shadow: 3px 3px 0px 2px $yellow;
+    color: $yellow;
 }
 
 .blueLink {

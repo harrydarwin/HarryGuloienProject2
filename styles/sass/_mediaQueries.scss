@@ -1,0 +1,106 @@
+@media (max-width: 940px) {
+    //HOME PAGE TABLET SIDEWAYS
+    //HEADER
+    header.home {
+        height: 80vh;
+    }
+
+    .home h1 {
+        top: 400px;
+    }
+
+    .title img {
+        top: 330px; 
+    }
+
+    .imageBox {
+        margin-top: 20px;
+    }
+
+    //ABOUT SECTION //
+
+    .who{
+        margin-bottom: 20px;
+    }
+
+    .faves,
+    .travel {
+        height: auto;
+        justify-content: center;;
+    }
+
+    .flip {
+        align-items: center;
+    }
+
+    .faves .container {
+        flex-direction: column;
+    }
+
+    .travel .container {
+        flex-direction: column-reverse;
+    }
+
+    .favesText,
+    .travelText {
+        width: 82%;
+        margin: 20px 0;
+    }
+
+    .image1 img,
+    .image2 img {
+        position: static;
+    }
+
+    .image1 img {
+        box-shadow: 14px 14px 0px 0px $red, -397px 14px 0px 0px $red, -100px 14px 0px 0px $red;
+    }
+
+    .image2 img {
+        box-shadow: -14px 14px 0px 0px $yellow, 397px 14px 0px 0px $yellow, 100px 14px 0px 0px $yellow;
+    }
+
+    .image1 {
+        margin-left: 30%;
+        align-self: right;
+    }
+
+    .image2 {
+        margin-right: 30%;
+        align-self: left;
+    }
+
+
+    //BLOG PAGE//
+
+    .firstPost {  
+        height: max-content;
+        overflow: hidden;
+        max-height: 500px;
+        transition: max-height .3s ease-in-out;
+    }
+
+    .blogPosts article:nth-of-type(1) {
+        margin-bottom: 0;
+    }
+
+    .seeMoreButton label {
+        display: block;
+    }
+
+    .seeMoreButton label:hover {
+        color: $lightBlue;
+        transform: scale(1.3);
+    }
+
+    #seeMore:checked .firstPost {
+        max-height: 1000000px;
+    }
+
+    // CONTACT PAGE//
+
+    .contactInfo p:not(.inTouch) {
+        display: none;
+    }
+
+}
