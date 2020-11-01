@@ -457,7 +457,7 @@ textarea {
 }
 
 header.home {
-  height: 95vh;
+  height: 85vh;
   background-color: #f6a823;
 }
 
@@ -502,8 +502,8 @@ header.home {
 }
 
 .imageBox img {
-  height: 521px;
-  width: 375px;
+  height: 500px;
+  width: 359px;
   -webkit-box-shadow: 16px 16px 0px 0px #ffffff;
           box-shadow: 16px 16px 0px 0px #ffffff;
 }
@@ -698,7 +698,8 @@ nav ul li a {
   margin-left: 15px;
 }
 
-.navBoxes li a:hover .icon {
+.navBoxes li a:hover .icon,
+.socials:hover {
   color: #05afc1;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
@@ -814,7 +815,12 @@ input#moreBlog,
 .contactMain {
   background-color: #f0efed;
   padding: 90px 0 30px;
-  height: 100vh;
+  height: 100%;
+}
+
+.socials {
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .contactMain .wrapper {
@@ -834,6 +840,7 @@ input#moreBlog,
 
 .form {
   width: calc(65% - 30px);
+  margin-bottom: 50px;
 }
 
 .form--users {
@@ -999,13 +1006,71 @@ button[type=submit]:focus {
     -webkit-transition: max-height .3s ease-in-out;
     transition: max-height .3s ease-in-out;
   }
+  .contactPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .contactInfo {
-    text-align: center;
+    width: 100%;
   }
-  .contactInfo li {
-    display: block;
+  .form {
+    width: 100%;
+    margin-top: 30px;
   }
-  .contactInfo p:not(.inTouch) {
+}
+
+@media (max-width: 768px) {
+  header.home {
+    background: url(../assets/home-image-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  header.home .imageBox {
     display: none;
+  }
+  header.home h1 {
+    top: 500px;
+    color: #f59e0b;
+  }
+  .title img {
+    top: 430px;
+  }
+  .image1,
+  .image2 {
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin: 0;
+  }
+  .navBoxes {
+    padding: 60px 0 10px;
+  }
+  .navBoxes li {
+    margin-bottom: 50px;
+  }
+  .navBoxes li p {
+    display: none;
+  }
+  .splash--blog {
+    background-position: left;
+  }
+  .blogPosts aside {
+    display: none;
+  }
+  .blogPosts--grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .firstPost {
+    overflow: hidden;
+    max-height: 100%;
+    -webkit-transition: max-height .3s ease-in-out;
+    transition: max-height .3s ease-in-out;
   }
 }

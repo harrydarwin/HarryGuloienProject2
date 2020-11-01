@@ -111,15 +111,86 @@
     // CONTACT PAGE//
 
 
-    .contactInfo {
-        text-align: center;
+   .contactPage {
+        flex-direction: column;
+        align-items: center;
     }
-    .contactInfo li {
-        display: block;
+    
+    .contactInfo {
+        width: 100%;
     }
 
-    .contactInfo p:not(.inTouch) {
+    .form {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    // NAVBAR 2 BURGER TIME//
+    
+
+    // HOME PAGE//
+    header.home {
+        background: url(../assets/home-image-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        & .imageBox {
+            display: none;
+        }
+        & h1 {
+            top: 500px;
+            color: darken($yellow, 5%);
+        }
+    }
+
+
+    .title img {
+        top: 430px; 
+    }
+
+    .image1,
+    .image2 {
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin: 0;
+    }
+    
+    .navBoxes {
+        padding: 60px 0 10px;
+    }
+
+    .navBoxes li {
+        margin-bottom: 50px;
+    }
+
+    .navBoxes li p {
         display: none;
     }
 
+    // BLOG PAGE //
+    .splash--blog {
+        background-position: left;
+    }
+
+    .blogPosts aside {
+        display: none;
+    }
+
+    .blogPosts--grid {
+        grid-template-columns: 1fr;
+    }
+
+    .firstPost {  
+        overflow: hidden;
+        max-height: 100%;
+        transition: max-height .3s ease-in-out;
+    }
+
+    // CONTACT //
+   
 }

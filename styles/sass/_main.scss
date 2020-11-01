@@ -105,7 +105,8 @@
     }   
 }
 
-.navBoxes li a:hover .icon {
+.navBoxes li a:hover .icon,
+.socials:hover {
     color: $lightBlue;
     transform: scale(1.3);
 }
@@ -210,7 +211,11 @@
 .contactMain {
     background-color: $white;
     padding: 90px 0 30px;
-    height: 100vh;
+    height: 100%;
+}
+
+.socials {
+    transition: all .3s;
 }
 
 .contactMain .wrapper {
@@ -228,6 +233,7 @@
 
 .form {
     width: calc(65% - 30px);
+    margin-bottom: 50px;
     &--users {
         justify-content: space-between;
     }
