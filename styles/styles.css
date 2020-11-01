@@ -236,6 +236,28 @@ html {
   overflow: hidden;
 }
 
+@-webkit-keyframes navSlide {
+  0% {
+    left: -100px;
+  }
+  50% {
+  }
+  100% {
+    left: 330px;
+  }
+}
+
+@keyframes navSlide {
+  0% {
+    left: -100px;
+  }
+  50% {
+  }
+  100% {
+    left: 330px;
+  }
+}
+
 html {
   font-size: 62.5%;
   padding: 0;
@@ -551,6 +573,14 @@ nav ul li {
 
 nav ul li a {
   padding: 10px;
+}
+
+.burg {
+  display: none;
+}
+
+input#menu {
+  display: none;
 }
 
 .navBar {
@@ -1025,6 +1055,171 @@ button[type=submit]:focus {
 }
 
 @media (max-width: 768px) {
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(246, 168, 35, 0.6);
+    height: 280px;
+  }
+  .burgerContent {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    max-width: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .navBar li {
+    position: absolute;
+    left: 0;
+  }
+  .navBar li:nth-of-type(1) {
+    top: 10px;
+    left: -200px;
+  }
+  .navBar li:nth-of-type(2) {
+    top: 60px;
+    left: -200px;
+  }
+  .navBar li:nth-of-type(3) {
+    margin: 0;
+    top: 120px;
+    left: -200px;
+  }
+  .navBar li:nth-of-type(4) {
+    top: 165px;
+    left: -200px;
+  }
+  .navBar li:nth-of-type(5) {
+    top: 210px;
+    left: -200px;
+  }
+  input#menu:checked ~ .burgerContent .navBar li:nth-of-type(1) {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -moz-animation-name: navSlide;
+  }
+  input#menu:checked ~ .burgerContent .navBar li:nth-of-type(2) {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.3s;
+            animation-delay: 1.3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -moz-animation-name: navSlide;
+  }
+  input#menu:checked ~ .burgerContent .navBar li:nth-of-type(3) {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -moz-animation-name: navSlide;
+  }
+  input#menu:checked ~ .burgerContent .navBar li:nth-of-type(4) {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.9s;
+            animation-delay: 1.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -moz-animation-name: navSlide;
+  }
+  input#menu:checked ~ .burgerContent .navBar li:nth-of-type(5) {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -moz-animation-name: navSlide;
+  }
+  input#menu:checked ~ .burgerContent {
+    max-width: 100vw;
+  }
+  input#menu {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    z-index: 4;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .burg {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 3;
+    background: #2c2c2c;
+    height: 5px;
+    width: 50px;
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+  }
+  .burg2 {
+    top: 40px;
+  }
+  .burg3 {
+    top: 55px;
+  }
+  input#menu:checked ~ div.burg1 {
+    -webkit-transform: translateY(15px) rotate(45deg);
+            transform: translateY(15px) rotate(45deg);
+  }
+  input#menu:checked ~ div.burg2 {
+    visibility: hidden;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  input#menu:checked ~ div.burg3 {
+    -webkit-transform: translateY(-15px) rotate(-45deg);
+            transform: translateY(-15px) rotate(-45deg);
+  }
   header.home {
     background: url(../assets/home-image-1.jpg);
     background-repeat: no-repeat;
@@ -1035,11 +1230,14 @@ button[type=submit]:focus {
     display: none;
   }
   header.home h1 {
-    top: 500px;
+    top: 550px;
+    left: 40px;
     color: #f59e0b;
+    font-size: 10rem;
   }
   .title img {
-    top: 430px;
+    top: 480px;
+    left: -15px;
   }
   .image1,
   .image2 {
@@ -1057,6 +1255,18 @@ button[type=submit]:focus {
   .navBoxes li p {
     display: none;
   }
+  .middleNav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gridTime {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .splash, .splash--blog, .splash--contact {
+    height: 50vh;
+  }
   .splash--blog {
     background-position: left;
   }
@@ -1072,5 +1282,28 @@ button[type=submit]:focus {
     max-height: 100%;
     -webkit-transition: max-height .3s ease-in-out;
     transition: max-height .3s ease-in-out;
+  }
+}
+
+@media (max-width: 480px) {
+  @-webkit-keyframes navSlide {
+    0% {
+      left: -100px;
+    }
+    50% {
+    }
+    100% {
+      left: 190px;
+    }
+  }
+  @keyframes navSlide {
+    0% {
+      left: -100px;
+    }
+    50% {
+    }
+    100% {
+      left: 190px;
+    }
   }
 }

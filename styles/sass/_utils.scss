@@ -21,3 +21,27 @@ $roboto: 'Roboto', sans-serif;
     line-height: $height;
     letter-spacing: $space;
 };
+
+@mixin letsMove($delay, $name:navSlide, $dur:.5s, $func:ease-out, $iterate:1, $fill:forwards, $play:running) {
+    animation-duration: $dur;
+    animation-timing-function: $func;
+    animation-delay: $delay;
+    animation-iteration-count: $iterate;
+    animation-fill-mode: $fill;
+    animation-play-state: $play;
+    -moz-animation-name: $name;
+}
+
+// ANIMATIONS
+@keyframes navSlide {
+    0% {
+        left: -100px;
+    }
+    50% {
+        
+    }
+    100% {
+        left: 330px
+    }
+};
+
