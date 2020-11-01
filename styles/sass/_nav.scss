@@ -24,6 +24,7 @@ input#menu {
     }
 }
 
-.navBar li a:hover {
+.navBar li a:hover,
+.navBar li a:focus {
     color: $white;
 }

@@ -106,7 +106,9 @@
 }
 
 .navBoxes li a:hover .icon,
-.socials:hover {
+.socials:hover,
+.navBoxes li a:focus .icon,
+.socials:focus {
     color: $lightBlue;
     transform: scale(1.3);
 }

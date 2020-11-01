@@ -377,7 +377,8 @@ footer p a:hover {
   font-weight: bold;
 }
 
-.blueLink:hover {
+.blueLink:hover,
+.blueLink:focus {
   color: #f6a823;
 }
 
@@ -600,7 +601,8 @@ input#menu {
   margin: 0 40px 0 40px;
 }
 
-.navBar li a:hover {
+.navBar li a:hover,
+.navBar li a:focus {
   color: #f0efed;
 }
 
@@ -729,7 +731,9 @@ input#menu {
 }
 
 .navBoxes li a:hover .icon,
-.socials:hover {
+.socials:hover,
+.navBoxes li a:focus .icon,
+.socials:focus {
   color: #05afc1;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);

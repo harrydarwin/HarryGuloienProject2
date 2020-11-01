@@ -104,6 +104,7 @@ footer {
     font-weight: bold;
 }
 
-.blueLink:hover {
+.blueLink:hover,
+.blueLink:focus {
     color: $yellow;
 }
