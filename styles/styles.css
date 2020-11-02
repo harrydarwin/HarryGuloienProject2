@@ -1181,6 +1181,7 @@ button[type=submit]:focus {
     max-width: 100vw;
   }
   input#menu {
+    display: block;
     position: absolute;
     right: 25px;
     top: 20px;
