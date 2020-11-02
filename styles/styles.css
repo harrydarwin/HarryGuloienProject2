@@ -1236,9 +1236,10 @@ button[type=submit]:focus {
   }
   header.home h1 {
     top: 550px;
-    left: 40px;
+    left: 20px;
     color: #f59e0b;
-    font-size: 10rem;
+    font-size: 8rem;
+    line-height: 8rem;
   }
   .title img {
     top: 480px;
